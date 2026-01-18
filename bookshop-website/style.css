@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #2F4F4F;
+    /* Dark Slate Gray */
+    --brown-color: #8B4513;
+    /* Saddle Brown */
+    --accent-gold: #C5A065;
+    --bg-cream: #FDFBF7;
+    --bg-paper: #F5F5DC;
+    --text-dark: #222222;
+    --text-muted: #666666;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: var(--text-dark);
+    background-color: var(--bg-cream);
+    overflow-x: hidden;
+}
+
+.bg-paper {
+    background-color: var(--bg-cream);
+}
+
+.bg-cream {
+    background-color: #fffefb;
+}
+
+.bg-navy {
+    background-color: #1a1f26;
+}
+
+.text-brown {
+    color: var(--brown-color) !important;
+}
+
+.btn-brown {
+    background-color: var(--brown-color);
+    border: 1px solid var(--brown-color);
+    transition: all 0.3s;
+}
+
+.btn-brown:hover {
+    background-color: #6d360f;
+    border-color: #6d360f;
+}
+
+/* Typography */
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--brown-color) !important;
+}
+
+/* Hero */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 80px;
+    background-color: var(--bg-cream);
+    background-image: radial-gradient(var(--text-muted) 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    /* Dot pattern */
+}
+
+/* Featured */
+.book-cover-3d {
+    perspective: 1000px;
+    display: inline-block;
+}
+
+.book-cover-3d img {
+    transform: rotateY(-15deg);
+    box-shadow: 15px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.book-cover-3d:hover img {
+    transform: rotateY(0deg) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Shop Cards */
+.card {
+    background: transparent;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover .book-img {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 380px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.btn-add-cart {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+.card:hover .btn-add-cart {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Utilities */
+.rotate-3 {
+    transform: rotate(3deg);
+}
+
+.rotate-n3 {
+    transform: rotate(-3deg);
+}
+
+.border-brown {
+    border-color: var(--brown-color) !important;
+}
+
+.modal-content {
+    box-shadow: 0 15px 50px rgba(139, 69, 19, 0.15);
+}
+
+.form-control:focus {
+    border-color: var(--brown-color);
+    box-shadow: 0 0 0 0.25rem rgba(139, 69, 19, 0.1);
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliophile & Co. - Curated Books</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-paper">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-cream border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold playfair fs-2 text-dark" href="#">
+                <i class="fa-solid fa-book-open text-brown me-2"></i> Bibliophile<span class="text-brown">&</span>Co.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-medium gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#journalModal">Journal</a></li>
+                    <li class="nav-item border-start ps-3 d-none d-lg-block">
+                        <a href="#" class="nav-link text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="#" class="nav-link text-dark"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-outline-dark rounded-0 px-4 position-relative">
+                            Cart <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-brown">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h5 class="text-brown ls-2 text-uppercase mb-3 fw-bold">Curated Collection</h5>
+                    <h1 class="display-3 playfair fw-bold text-dark mb-4 lh-sm">
+                        Lost in a good <span class="fst-italic text-brown">Story.</span>
+                    </h1>
+                    <p class="lead text-secondary lora mb-5" style="max-width: 500px;">
+                        Discover rare editions, timeless classics, and contemporary masterpieces. A sanctuary for the
+                        modern reader.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#shop" class="btn btn-dark rounded-0 px-5 py-3 fw-medium">Explore Collection</a>
+                        <a href="#" class="btn btn-link text-dark text-decoration-none fw-medium mt-2"
+                            data-bs-toggle="modal" data-bs-target="#storyModal">Read our
+                            Story <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="hero-image-frame p-3 bg-white shadow-lg rotate-n3">
+                        <img src="images.jpeg" alt="Library" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="hero-image-frame p-3 bg-white shadow-lg position-absolute top-50 start-50 translate-middle rotate-3 z-n1 opacity-50"
+                        style="width: 95%; height: 95%;"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Book -->
+    <section id="featured" class="py-5 bg-white border-top border-bottom">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <div class="book-cover-3d mb-4 mb-md-0">
+                        <img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                            alt="Book of the Month" class="img-fluid rounded-1 shadow-lg">
+                    </div>
+                </div>
+                <div class="col-md-7 ps-md-5">
+                    <span
+                        class="badge bg-light text-brown border border-brown rounded-0 mb-3 px-3 py-2 text-uppercase ls-1">Book
+                        of the Month</span>
+                    <h2 class="playfair display-5 mb-3">The Midnight Library</h2>
+                    <h5 class="text-secondary mb-4 lora fst-italic">by Matt Haig</h5>
+                    <p class="text-muted lora mb-4 lh-lg">
+                        Between life and death there is a library, and within that library, the shelves go on forever.
+                        Every book provides a chance to try another life you could have lived. To see how things would
+                        be different if you had made other choices...
+                    </p>
+                    <div class="d-flex gap-4 border-top pt-4">
+                        <div>
+                            <small class="text-uppercase fw-bold text-secondary d-block mb-1">Genre</small>
+                            <span class="playfair fs-5">Fiction</span>
+                        </div>
+                        <div>
+                            <small class="text-uppercase fw-bold text-secondary d-block mb-1">Pages</small>
+                            <span class="playfair fs-5">304</span>
+                        </div>
+                        <div>
+                            <small class="text-uppercase fw-bold text-secondary d-block mb-1">Price</small>
+                            <span class="playfair fs-5 text-brown fw-bold">$24.99</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-brown text-white rounded-0 px-5 py-3 mt-4 w-100 w-md-auto order-btn"
+                        data-book="The Midnight Library">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section id="shop" class="py-5 bg-paper">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h5 class="text-brown fw-bold text-uppercase ls-2 mb-2">Editor's Picks</h5>
+                    <h2 class="playfair display-6">Latest Arrivals</h2>
+                </div>
+                <div class="d-none d-md-block">
+                    <a href="#" class="btn btn-outline-dark rounded-0">View All Books</a>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <ul class="nav nav-underline mb-5 lora" id="book-tabs">
+                <li class="nav-item me-3"><a class="nav-link active text-dark" href="#" data-filter="all">All Genres</a>
+                </li>
+                <li class="nav-item me-3"><a class="nav-link text-secondary" href="#" data-filter="fiction">Fiction</a>
+                </li>
+                <li class="nav-item me-3"><a class="nav-link text-secondary" href="#"
+                        data-filter="non-fiction">Non-Fiction</a></li>
+                <li class="nav-item"><a class="nav-link text-secondary" href="#" data-filter="classics">Classics</a>
+                </li>
+            </ul>
+
+            <div class="row g-4" id="book-grid">
+                <!-- JS Injection -->
+            </div>
+
+            <div class="text-center mt-5 d-md-none">
+                <a href="#" class="btn btn-outline-dark rounded-0 w-100">View All Books</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-light py-5">
+        <div class="container py-4">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="playfair mb-4">Bibliophile<span class="text-brown">&</span>Co.</h3>
+                    <p class="lora text-white-50">A curated space for book lovers. We believe in the power of stories to
+                        change lives and ignite imaginations.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="text-uppercase fw-bold ls-1 mb-4">Shop</h6>
+                    <ul class="list-unstyled lora">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Bestsellers</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Stationery</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="text-uppercase fw-bold ls-1 mb-4">About</h6>
+                    <ul class="list-unstyled lora">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Journal</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-uppercase fw-bold ls-1 mb-4">Newsletter</h6>
+                    <p class="lora text-white-50 mb-3">Join our readers club for weekly updates.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control rounded-0 bg-transparent border-light text-white"
+                            placeholder="Email Address">
+                        <button class="btn btn-brown text-white rounded-0 px-4">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-5">
+            <div class="d-flex justify-content-between lora text-white-50 small">
+                <span>&copy; 2024 Bibliophile & Co.</span>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white-50"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white-50"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" class="text-white-50"><i class="fa-brands fa-goodreads"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0 border-0 bg-cream">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title playfair fs-3 fw-bold" id="orderModalLabel">Place Your Order</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-2">
+                    <p class="lora text-secondary mb-4">Complete the form below to order: <span id="modalBookTitle"
+                            class="fw-bold text-dark"></span></p>
+                    <form id="orderForm">
+                        <div class="mb-3">
+                            <label for="customerName"
+                                class="form-label lora small text-uppercase ls-1 fw-bold text-brown">Full Name</label>
+                            <input type="text" class="form-control rounded-0 border-brown shadow-none bg-transparent"
+                                id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerPhone"
+                                class="form-label lora small text-uppercase ls-1 fw-bold text-brown">Phone
+                                Number</label>
+                            <input type="tel" class="form-control rounded-0 border-brown shadow-none bg-transparent"
+                                id="customerPhone" required placeholder="03XXXXXXXXX">
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerAddress"
+                                class="form-label lora small text-uppercase ls-1 fw-bold text-brown">Delivery
+                                Address</label>
+                            <textarea class="form-control rounded-0 border-brown shadow-none bg-transparent"
+                                id="customerAddress" rows="3" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-brown text-white rounded-0 px-5 py-3 w-100 mt-2 fw-medium">Confirm
+                            Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story Modal -->
+    <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-0 border-0 bg-cream">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title playfair fs-3 fw-bold" id="storyModalLabel">Our Story</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 mb-4 mb-md-0">
+                            <img src="images.jpeg" alt="Our Library" class="img-fluid rounded-1 shadow">
+                        </div>
+                        <div class="col-md-7">
+                            <h4 class="playfair mb-3">Welcome to Bibliophile <span class="text-brown">&</span> Co.</h4>
+                            <p class="lora text-secondary lh-lg">
+                                Founded in 2024, Bibliophile & Co. started as a small dream to bring back the charm of
+                                physical books in a digital world. Our mission is to curate a space where every book
+                                tells a story beyond its pages.
+                            </p>
+                            <p class="lora text-secondary lh-lg">
+                                From rare first editions to contemporary masterpieces, each book in our collection is
+                                handpicked for its quality and significance. We believe that a library is a hospital for
+                                the mind, and we are here to provide the perfect cure.
+                            </p>
+                            <div class="mt-4">
+                                <h6 class="text-uppercase fw-bold ls-1 mb-2 small text-brown">Visit Us</h6>
+                                <p class="lora small text-muted mb-0">123 Bookworm Lane, Literal City<br>Mon - Sat: 10AM
+                                    - 8PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journal Modal -->
+    <div class="modal fade" id="journalModal" tabindex="-1" aria-labelledby="journalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-0 border-0 bg-cream">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title playfair fs-3 fw-bold" id="journalModalLabel">Literary Journal</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 pt-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="playfair mb-3">Latest from Our Journal</h4>
+                            <p class="lora text-secondary lh-lg">
+                                Welcome to our literary journal, where we share book reviews, author interviews, and
+                                reading recommendations. Dive into the world of literature with our curated articles and
+                                insights.
+                            </p>
+
+                            <div class="border-top pt-4 mt-4">
+                                <h6 class="text-uppercase fw-bold ls-1 mb-3 small text-brown">Recent Articles</h6>
+
+                                <div class="mb-4">
+                                    <h5 class="playfair mb-2">The Art of Slow Reading</h5>
+                                    <p class="lora small text-muted mb-2">Published: January 2026</p>
+                                    <p class="lora text-secondary">In our fast-paced world, discover the joy of savoring
+                                        every word and letting stories unfold at their own pace.</p>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5 class="playfair mb-2">Interview: Contemporary Authors</h5>
+                                    <p class="lora small text-muted mb-2">Published: December 2025</p>
+                                    <p class="lora text-secondary">Exclusive conversations with today's most compelling
+                                        voices in fiction and non-fiction.</p>
+                                </div>
+
+                                <div>
+                                    <h5 class="playfair mb-2">Building Your Personal Library</h5>
+                                    <p class="lora small text-muted mb-2">Published: November 2025</p>
+                                    <p class="lora text-secondary">A guide to curating a collection that reflects your
+                                        unique reading journey and interests.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
